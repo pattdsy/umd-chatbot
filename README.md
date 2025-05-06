@@ -30,6 +30,8 @@ Autocorrection
 Typos are corrected before prediction using TextBlob 
 Chatbot knowledge base 
 Stores structured answers in responses.json 
+
+
 Tech Stack 
 Python (Flask, JSON, re, TextBlob) 
 TensorFlow (TFBertForSequenceClassification) 
@@ -38,14 +40,19 @@ Scikit-learn for label encoding and model evaluation
 Model Training Summary 
 
 Input: intents.csv file with labeled chatbot training phrases 
+
 Label encoding: Convert labels to numeric label_id 
 Tokenizer: bert-base-uncased from Hugging Face 
+
 Model: Fine-tuned BERT with softmax output for classification 
 Evaluation: 80/20 train-validation split, 10 epochs 
+
 Saved Artifacts: 
 intent_model/ (BERT model) 
 tokenizer/ (BERT tokenizer) 
 label_encoder_classes.json (intent classes) 
+
+
 Sample Intents Covered 
 
 “What is a UMD?” → umd_guidelines 
@@ -64,6 +71,8 @@ Sample Intents Covered
 “What are data type standards?” → hardcoded keyword response 
 “What does UMD status mean?” → umd_status_explained 
 “Help” / “What can you do?” / “I don’t understand” → chatbot_help fallback 
+
+
 How to Run Locally (only for SBC Enterprise Data Office) 
  
 
