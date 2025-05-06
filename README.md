@@ -1,6 +1,5 @@
 # umd-chatbot
 User-Managed Data (UMD) Governance Chatbot using Python (TensorFlow, NLP with BERT, Pandas, and NumPy) to enhance employee navigation of data governance frameworks, umd identification and registration help.
-UMD Buddy Chatbot  
 
 A BERT-powered chatbot designed to help employees identify, classify, and register User Managed Data (UMD) within enterprise environments. Built to support data governance awareness and policy compliance through natural language interaction. 
 
