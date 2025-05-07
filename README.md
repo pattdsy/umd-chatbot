@@ -93,7 +93,7 @@ pip install -r requirements.txt
 ### 4. Download and extract model folders
 
 Download from Google Drive:  
-📥 https://drive.google.com/drive/u/0/folders/1HgtySCBgFahqvRQnoTZqPyqZQKT-VeEO
+https://drive.google.com/drive/u/0/folders/1HgtySCBgFahqvRQnoTZqPyqZQKT-VeEO
 
 Files needed:
 - `intent_model.zip`
@@ -124,40 +124,49 @@ Then open your browser and go to:
 http://127.0.0.1:5000
 ```
 
-Sample Intents Covered
+## Sample Intents Covered
 
-User Query	Intent
-What is a UMD?	> umd_guidelines
-Is this file a UMD?	> umd_check_start
-How do I register my file?	> umd_registration
-Who owns the UMD?	> umd_ownership
-What is the CDP?	> fallback_keywords
-What is Dataiku?	> dataiku_guidelines
-Dataiku model lifecycle?	> dataiku_model_lifecycle
-What are Dataiku assets?	> dataiku_asset_definitions
-Define active/inactive customer	> customer_status_framework
-What is AI/ML governance?	> ai_framework
-Data Asset Prioritization Guidelines?	> data_asset_prioritisation
-Column/table/data type standards?	> hardcoded keyword response
-What does UMD status mean?	> umd_status_explained
-I don’t understand / Help	> chatbot_help
+| User Query                             | Intent                      |
+|----------------------------------------|-----------------------------|
+| What is a UMD?                         | `umd_guidelines`            |
+| Is this file a UMD?                    | `umd_check_start`           |
+| How do I register my file?             | `umd_registration`          |
+| Who owns the UMD?                      | `umd_ownership`             |
+| What is the CDP?                       | `fallback_keywords`         |
+| What is Dataiku?                       | `dataiku_guidelines`        |
+| Dataiku model lifecycle?               | `dataiku_model_lifecycle`   |
+| What are Dataiku assets?               | `dataiku_asset_definitions` |
+| Define active/inactive customer        | `customer_status_framework` |
+| What is AI/ML governance?              | `ai_framework`              |
+| Data Asset Prioritization Guidelines?  | `data_asset_prioritisation` |
+| Column/table/data type standards?      | `hardcoded keyword response`|
+| What does UMD status mean?             | `umd_status_explained`      |
+| I don’t understand / Help              | `chatbot_help`              |
 
-Example Response Flow
+---
 
-User: "Is my file a UMD?"
-Bot: "Let’s start. Was this file created outside official IT systems, like Excel, Access, or through manual processes?"
-User: "Yes, it's from Excel."
+## Example Response Flow
+
+```text
+User: "Is my file a UMD?"  
+Bot: "Let’s start. Was this file created outside official IT systems, like Excel, Access, or through manual processes?"  
+User: "Yes, it's from Excel."  
 Bot: "Got it. Was the file enriched or modified after creation? (yes/no)"
+```
 
-Internal Deployment Plan
+---
 
-This bot can be registered with Microsoft Teams via the Bot Framework and integrated into internal systems using a secure API gateway. The model and logic can be hosted on enterprise infrastructure (e.g., Azure or AWS) to enable real-time support for UMD governance.
+## Internal Deployment Plan
 
-Future Improvements
+This bot can be registered with **Microsoft Teams** using the **Microsoft Bot Framework**, and integrated into internal systems via a secure API gateway.
 
-Replace responses.json with dynamic knowledge base (e.g., SharePoint/REST API)
-Add chat history tracking & user analytics
-Deploy on MS Teams or Slack via webhook
-Add multilingual support (e.g., Google Translate API)
+The model and logic can be hosted on enterprise infrastructure (e.g., **Azure** or **AWS**) to provide real-time UMD guidance at scale.
 
+---
 
+## Future Improvements
+
+- Replace `responses.json` with a dynamic knowledge base (e.g., SharePoint or REST API)
+- Add chat history tracking and user analytics
+- Deploy on Microsoft Teams or Slack using webhook integration
+- Implement multilingual support (e.g., Google Translate API)
