@@ -1,0 +1,57 @@
+{
+    "greeting": [
+      "Hello! How can I assist you with UMD or Data Governance today?",
+      "Hi there! I'm here to help with UMD or Data Policy questions."
+    ],
+    "goodbye": [
+      "Goodbye! Let me know if you need more help with your UMD tasks.",
+      "See you! Always here to help with DG & UMDs.",
+      "Until next time, come back anytime to ask me more."
+    ],
+    "chatbot_help": [
+      "I can assist you by pointing you in the right direction! EDO has specific frameworks and guidelines for:\n\n• Identifying User Managed Data (UMD)\n• Registering and governing UMD files\n• Understanding AI/ML model governance\n• Navigating EDO policies and data governance standards\n• Clarifying customer status lifecycle\n• Exploring tools like Dataiku\n\nHere are key frameworks I can explain:\n\n- AI/ML Model Development Framework\n- UMD Policy and Registration Process\n- Data Asset Prioritisation Guidelines\n- Customer Status Lifecycle Standards\n- Data Governance Standards (e.g., Table and Column Naming)\n\nAsk me about any of these, or let me guide you step-by-step!"
+    ],
+    "umd_ownership": [
+      "A UMD owner is the person who updates, transforms, consolidates, or maintains a UMD file.\n\nResponsibilities include:\n\n- Registering the UMD\n- Recertifying regularly\n- Ensuring accuracy and classification"
+    ],
+    "umd_registration": [
+      "You can register a UMD by accessing:\n\n DG - Data Policy > Policies and Frameworks > User Managed Data (UMD) Framework\n\nThere, you'll find the full UMD Registration User Guide with detailed registration steps.\n\nThe UMD Registration Platform link is available on the Data Governance Portal > User Managed Data Learning Portal.\n\nYou must provide:\n- File path\n- Owner\n- Classification\n- Approver details\n\nIf you have more questions, you may contact Katrina Gob from the UMD Policy & Re-engineering Team for assistance."
+    ],
+    "dataiku_model_lifecycle": [
+      "In Dataiku:\n\n- DSAI-developed models follow a Request ➔ Development ➔ Deployment ➔ Production workflow handled by the Data Science Team.\n- Business-developed models start with Discovery and Development in the Design node, then follow the same deployment path via the Automation node."
+    ],
+    "dataiku_guidelines": [
+      "Dataiku is our cloud-based data science platform where teams collaboratively build, deploy, and monitor machine learning models.\n\nKey notes:\n\n- Models must pass the 1Rail governance process (Request ➔ Documentation Review ➔ Approval).\n- Models transition from Design node (development) ➔ Automation node (production).\n- Data storage in Dataiku (especially S3 files) is subject to retention policies.\n- Business users must proactively delete unused data.\n- Storage usage is monitored by EDO and ITG Cloud teams to control costs."
+    ],
+    "dataiku_asset_definitions": [
+      "A data asset in Dataiku can include:\n\n- Datamart: A focused view of business data (mini-data warehouse)\n- Data Frame: Spreadsheet-like 2D structure (rows & columns)\n- Dashboard: Visual summaries of key metrics\n- Report: Extracted data summaries\n- Model: Structured representation of patterns in data\n\nAll assets are stored, versioned, and governed in the Cloud Data Platform (CDP)."
+    ],
+    "umd_check_start": [
+      "Let’s start. Was this file created outside official IT systems, like Excel, Access, or through manual processes?"
+    ],
+    "umd_check_created": [
+      "Okay, did you manually consolidate, transform, or enrich the data?"
+    ],
+    "umd_check_transformed": [
+      "Thanks. This file likely qualifies as a UMD.\n\nWould you like a link to the UMD registration portal or more information about how to register the file(s)?"
+    ],
+    "umd_check_not_transformed": [
+      "Since the data wasn’t transformed, it does not qualify as a UMD.\n\nYou may still check with Katrina Gob from the Data Governance (UMD Re-engineering) team to confirm."
+    ],
+    "umd_status_explained": [
+      "UMD statuses indicate the current stage of the UMD registration lifecycle. UMD statuses:\n\n- In Progress: UMD has been created but not yet approved.\n- Active: Approved and actively monitored.\n- Retired: No longer in use and formally decommissioned in the system."
+    ],
+    "umd_guidelines": [
+      "A UMD (User Managed Data) is any data file created or modified outside formal IT-managed systems.\n\nA file is classified as a UMD if:\n\n- Created using manual tools like Excel, Access, or macros\n- Transformed, enriched, or consolidated manually\n- Used in reporting, business decision-making, or regulatory submissions\n\n📄 UMDs must be registered through the UMD Registration Platform and are approved by a designated UMD Approver.\n\nRecertification is required regularly to ensure compliance.\n\n Would you like to check if your file is a UMD? (yes or no)"
+    ],
+    "ai_framework": [
+      "The AI and ML Model Development Framework provides a structured and responsible approach to model design, development, and deployment at the bank.\n\nIt defines key activities:\n\n- Implementation\n- Monitoring\n- Evaluation\n\nAnd embeds governance principles like:\n\n- Transparency\n- Fairness\n- Accountability\n- Privacy and security\n- Safety\n- Human-centricity\n- Inclusiveness\n- Ethical use\n- Continuous monitoring and improvement\n- Human-in-the-loop involvement\n\nFor the full policy, contact Data Governance or refer to the EDO portal."
+    ],
+    "data_asset_prioritisation": [
+      "The EDO Data Asset Prioritisation Guidelines classify data assets into five tiers based on:\n\n- Business use\n- Criticality\n\nIt helps the Enterprise Data Office prioritize effort allocation across managed platforms."
+    ],
+    "customer_status_framework": [
+      "The Customer Status Framework standardizes customer lifecycle definitions (onboarding to offboarding).\n\nIt covers:\n\n- 'Active', 'Inactive', and 'Deactivated' customer statuses\n- Open/Closed account status definitions\n\nThis supports 360° customer analytics and unified reporting across systems.\n\n For more definitions and rules, please navigate to DG Data Policy > Policies and Frameworks > Customer Data Standards."
+    ]
+  }
+  
