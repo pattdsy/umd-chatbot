@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Databot 🤖</title>
+  
+  <!-- Background style -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("{{ url_for('static', filename='background.webp') }}") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+
+  <!-- Regular styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="chat-container">
+    <h1> Databot 🤖</h1>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Type your question..." autocomplete="off">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const userInput = document.getElementById('user-input');
+
+    // Correct typing gif
+    const typingDotsURL = "{{ url_for('static', filename='typing.gif') }}";
+
+    function createBubble(text, sender) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble', sender);
+
+      if (sender === 'bot') {
+        // Wrap bot text so it preserves \n line breaks, but also wraps nicely
+        bubble.innerHTML = `<div style="white-space: pre-wrap;">${text}</div>`;
+      } else {
+        bubble.innerText = text;
+      }
+
+      chatBox.appendChild(bubble);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function sendMessage() {
+      const message = userInput.value.trim();
+      if (!message) return;
+      createBubble(message, 'user');
+      userInput.value = '';
+
+      // Typing animation
+      const typingBubble = document.createElement('div');
+      typingBubble.classList.add('bubble', 'bot', 'typing');
+      typingBubble.innerHTML = `<img src="${typingDotsURL}" alt="Typing..." style="width:40px;">`;
+      chatBox.appendChild(typingBubble);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      fetch('/chat', {
+        method: 'POST',
+        body: JSON.stringify({ message: message }),
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(response => response.json())
+      .then(data => {
+        typingBubble.remove(); // Remove typing gif
+        createBubble(data.response, 'bot');
+      });
+    }
+
+    // Allow Enter key to send
+    userInput.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
 
