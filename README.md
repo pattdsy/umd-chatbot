@@ -47,9 +47,40 @@ Model: Fine-tuned BERT with softmax output for classification
 Evaluation: 80/20 train-validation split, 10 epochs 
 
 Saved Artifacts: 
-intent_model/ (BERT model) 
-tokenizer/ (BERT tokenizer) 
-label_encoder_classes.json (intent classes) 
+intent_model/ (BERT model) *
+tokenizer/ (BERT tokenizer) *
+label_encoder_classes.json (intent classes) *
+* Note that these artifacts are separate zip files uploaded into Google Drive due to Github size limits.
+
+
+How to run locally
+How to Run Locally
+Clone the repository
+git clone https://github.com/pattdsy/umd-chatbot.git
+cd umd-chatbot
+Set up a virtual environment (recommended)
+python3 -m venv chatbot_env
+source chatbot_env/bin/activate  # Mac/Linux
+# For Windows:
+# chatbot_env\Scripts\activate
+Install dependencies
+pip install -r requirements.txt
+Download and extract the model files
+Download these two ZIP files from Google Drive:
+
+intent_model.zip
+tokenizer.zip
+After downloading, extract them into the project root so the folder structure looks like:
+
+umd-chatbot/
+├── app.py
+├── umd_bot.py
+├── intent_model/
+├── tokenizer/
+Run the chatbot
+python app.py
+Then open your browser and go to:
+👉 http://127.0.0.1:5000
 
 
 Sample Intents Covered 
