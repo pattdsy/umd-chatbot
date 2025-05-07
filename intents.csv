@@ -1,0 +1,282 @@
+text,label
+Hi there,greeting
+"Hello, I need some help",greeting
+Kamusta po,greeting
+"Hey, are you the data governance bot?",greeting
+Is anyone here who can help me with UMD?,greeting
+Good morning,greeting
+Hey Data Buddy!,greeting
+"Hi, I have a question",greeting
+Can I ask something about UMD?,greeting
+may I I ask something about UMD?,greeting
+"Yo, anyone online?",greeting
+Bye,goodbye
+Goodbye,goodbye
+See you,goodbye
+I have to go,goodbye
+See you?,goodbye
+Can you clarify: See you?,goodbye
+I have to go?,goodbye
+It's over,goodbye
+It's done,goodbye
+Matter is resolved,goodbye
+All good,goodbye
+I'm finished,goodbye
+Everything is fine,goodbye
+Thanks for helping me,goodbye
+Thank you,goodbye
+Talk to you later,goodbye
+Gotta go,goodbye
+What can you do?,chatbot_help
+the thing that is it possible to you do?,chatbot_help
+the thing that can you do?,chatbot_help
+What can you help me with?,chatbot_help
+Chatbot capabilities?,chatbot_help
+How do I use you,chatbot_help
+by what means do I use you,chatbot_help
+How can I ask questions,chatbot_help
+How is it possible to I ask questions,chatbot_help
+List down your features,chatbot_help
+How can I use this chatbot?,chatbot_help
+by what means can I use this chatbot?,chatbot_help
+What kind of questions can I ask you?,chatbot_help
+which kind of questions can I ask you?,chatbot_help
+Tell me what you're good at.,chatbot_help
+Tell me which you're good at.,chatbot_help
+What topics do you support?,chatbot_help
+the thing that topics do you support?,chatbot_help
+How do I interact with you?,chatbot_help
+by what means do I interact with you?,chatbot_help
+What is your purpose?,chatbot_help
+What services do you offer?,chatbot_help
+Who is a UMD owner?,umd_ownership
+What is UMD ownership?,umd_ownership
+Responsibilities of a UMD owner?,umd_ownership
+Can you explain UMD ownership?,umd_ownership
+What does a UMD owner do?,umd_ownership
+which does a UMD owner do?,umd_ownership
+UMD owner definition?,umd_ownership
+Who maintains a UMD?,umd_ownership
+How to register a UMD?,umd_registration
+How to enroll a UMD?,umd_registration
+in what way to register a UMD?,umd_registration
+UMD registration platform?,umd_registration
+Can I register a UMD?,umd_registration
+Can I submit a UMD?,umd_registration
+Where do I register UMDs?,umd_registration
+Where do I submit UMDs?,umd_registration
+at which place do I register UMDs?,umd_registration
+Process for UMD registration?,umd_registration
+Registering a UMD file?,umd_registration
+Registering a UMD document,umd_registration
+UMD registration steps?,umd_registration
+How are models created in Dataiku?,dataiku_model_lifecycle
+Explain DSAI-developed vs business-developed models,dataiku_model_lifecycle
+What is the model development workflow?,dataiku_model_lifecycle
+the thing that is the model development workflow?,dataiku_model_lifecycle
+Model creation in Dataiku?,dataiku_model_lifecycle
+What is the Design node?,dataiku_model_lifecycle
+How do models reach production?,dataiku_model_lifecycle
+Lifecycle of Dataiku models?,dataiku_model_lifecycle
+What is Dataiku used for?,dataiku_guidelines
+How does Dataiku work?,dataiku_guidelines
+What is the 1Rail process?,dataiku_guidelines
+How do I submit a Dataiku model for deployment?,dataiku_guidelines
+Can business teams use Dataiku?,dataiku_guidelines
+What are the Design and Automation nodes?,dataiku_guidelines
+the thing that are the Design and Automation nodes?,dataiku_guidelines
+How do models go live in Dataiku?,dataiku_guidelines
+Explain the Dataiku workflow,dataiku_guidelines
+Who approves Dataiku projects?,dataiku_guidelines
+What is the governance process in Dataiku?,dataiku_guidelines
+which is the governance process in Dataiku?,dataiku_guidelines
+What are the storage and retention rules for Dataiku?,dataiku_guidelines
+Are there costs for storing files in Dataiku?,dataiku_guidelines
+What is a data asset?,dataiku_asset_definitions
+the thing that is a data asset?,dataiku_asset_definitions
+Define data frame and datamart,dataiku_asset_definitions
+What outputs can be produced in Dataiku?,dataiku_asset_definitions
+which outputs may I be produced in Dataiku?,dataiku_asset_definitions
+What is a dashboard?,dataiku_asset_definitions
+What types of files does Dataiku generate?,dataiku_asset_definitions
+which types of files does Dataiku generate?,dataiku_asset_definitions
+Examples of Dataiku assets?,dataiku_asset_definitions
+Can I generate reports in Dataiku?,dataiku_asset_definitions
+may I I generate reports in Dataiku?,dataiku_asset_definitions
+Is a datamart the same as a data lake?,dataiku_asset_definitions
+What is the purpose of a data frame?,dataiku_asset_definitions
+the thing that is the purpose of a data frame?,dataiku_asset_definitions
+What outputs are supported in Dataiku?,dataiku_asset_definitions
+the thing that outputs are supported in Dataiku?,dataiku_asset_definitions
+Check if this file is a UMD,umd_check_start
+Check if this dataset is a UMD,umd_check_start
+Is this a UMD?,umd_check_start
+Can you validate this?,umd_check_start
+is it possible to you validate this?,umd_check_start
+Is this gap file a UMD?,umd_check_start
+How do I check if a file is a UMD?,umd_check_start
+How do I check if a dataset is a UMD?,umd_check_start
+Validate if this is a user-managed data file,umd_check_start
+Is this manually created file a UMD?,umd_check_start
+"Yes, it was made in Excel during the UMD check",umd_check_created
+I created it manually for this UMD file,umd_check_created
+I created it manually for this UMD document,umd_check_created
+This was made outside official IT systems,umd_check_created
+I built the spreadsheet manually as part of the UMD process,umd_check_created
+This file was created in Access and I’m checking if it's UMD,umd_check_created
+"Yes, I made this file without automation",umd_check_created
+It's from Excel and I'm doing a UMD check,umd_check_created
+"Yes, I transformed it during UMD validation",umd_check_transformed
+I added columns to the UMD file,umd_check_transformed
+I added columns to the UMD document,umd_check_transformed
+I merged sources while preparing the UMD data,umd_check_transformed
+This UMD file was cleaned and edited manually,umd_check_transformed
+"Yes, I enriched the data before registering the UMD",umd_check_transformed
+I aggregated input files for this UMD,umd_check_transformed
+"Yes, I applied formulas in the spreadsheet for UMD",umd_check_transformed
+"No, I didn’t change anything",umd_check_not_transformed
+It’s just a copy,umd_check_not_transformed
+I just extracted it,umd_check_not_transformed
+No edits were made,umd_check_not_transformed
+It’s raw data,umd_check_not_transformed
+No transformation applied,umd_check_not_transformed
+I didn’t manipulate the data,umd_check_not_transformed
+What are the different status labels in the UMD system?,umd_status_explained
+How do I know if a UMD is active or retired?,umd_status_explained
+in what way do I know if a UMD is active or retired?,umd_status_explained
+Can you explain what 'In Progress' means for a UMD?,umd_status_explained
+What does it mean if a UMD is retired?,umd_status_explained
+What are the definitions for UMD statuses?,umd_status_explained
+Break down the UMD lifecycle stages for me,umd_status_explained
+What’s the meaning of each UMD status?,umd_status_explained
+How do I interpret UMD approval stages?,umd_status_explained
+in what way do I interpret UMD approval stages?,umd_status_explained
+What lifecycle stage follows 'In Progress' for UMDs?,umd_status_explained
+Is there a difference between active and approved UMDs?,umd_status_explained
+What is a UMD?,umd_guidelines
+What is user managed data,umd_guidelines
+How to know if gap file is UMD,umd_guidelines
+which is a UMD?,umd_guidelines
+How do I know if my file is a UMD?,umd_guidelines
+How do I know if my document is a UMD?,umd_guidelines
+What qualifies as UMD?,umd_guidelines
+Explain UMD rules,umd_guidelines
+What makes data a UMD?,umd_guidelines
+What is the criteria for classifying UMD?,umd_guidelines
+How are UMDs approved?,umd_guidelines
+in what way are UMDs approved?,umd_guidelines
+What is the UMD registration process?,umd_guidelines
+which is the UMD registration process?,umd_guidelines
+Can you walk me through UMD classification?,umd_guidelines
+Is Excel data considered a UMD?,umd_guidelines
+What is the UMD policy?,umd_guidelines
+Can I get the UMD policy?,umd_guidelines
+Where can I find the UMD documentation?,umd_guidelines
+Where may I I find the UMD documentation?,umd_guidelines
+What is the AI and ML development framework?,ai_framework
+the thing that is the AI and ML development framework?,ai_framework
+How are AI models developed?,ai_framework
+in what way are AI models developed?,ai_framework
+by what means are AI models developed?,ai_framework
+What’s the process for model development?,ai_framework
+How are models governed?,ai_framework
+Explain the AI governance framework,ai_framework
+How does SBC handle AI and ML?,ai_framework
+What are the principles of the AI framework?,ai_framework
+the thing that are the principles of the AI framework?,ai_framework
+which are the principles of the AI framework?,ai_framework
+Steps in AI model lifecycle?,ai_framework
+What are the guardrails for ML?,ai_framework
+How does the bank deploy machine learning?,ai_framework
+in what way does the bank deploy machine learning?,ai_framework
+by what means does the bank deploy machine learning?,ai_framework
+AI governance,ai_framework
+ML policy,ai_framework
+AI Framework?,ai_framework
+Artificial intelligence policies?,ai_framework
+Machine learning standards?,ai_framework
+AI compliance?,ai_framework
+ML governance guidelines?,ai_framework
+What are the data prioritisation guidelines?,data_asset_prioritisation
+How are data assets classified?,data_asset_prioritisation
+by what means are data assets classified?,data_asset_prioritisation
+What is the 5-tier data classification system?,data_asset_prioritisation
+which is the 5-tier data classification system?,data_asset_prioritisation
+How does EDO prioritise data?,data_asset_prioritisation
+by what means does EDO prioritise data?,data_asset_prioritisation
+What is the purpose of data asset tiers?,data_asset_prioritisation
+Tell me about EDO data asset prioritisation,data_asset_prioritisation
+How does classification affect data projects?,data_asset_prioritisation
+Which data gets worked on first?,data_asset_prioritisation
+What influences EDO prioritisation?,data_asset_prioritisation
+which influences EDO prioritisation?,data_asset_prioritisation
+Who uses the data classification framework?,data_asset_prioritisation
+What is the customer status standard?,customer_status_framework
+How is customer status tracked?,customer_status_framework
+"Define active, inactive, and deactivated customers",customer_status_framework
+What’s the lifecycle of customer data?,customer_status_framework
+What is the open vs closed account status?,customer_status_framework
+which is the open vs closed account status?,customer_status_framework
+What defines customer offboarding?,customer_status_framework
+How do we know if a customer is active?,customer_status_framework
+in what way do we know if a customer is active?,customer_status_framework
+Is there a 360 view of customer status?,customer_status_framework
+What’s the customer journey framework?,customer_status_framework
+What does deactivated mean in CRM?,customer_status_framework
+I need your help,chatbot_help
+Can you help me?,chatbot_help
+I need some assistance,chatbot_help
+I need support,chatbot_help
+Can I ask you something?,chatbot_help
+I have a question,chatbot_help
+Need help with UMD,chatbot_help
+I want to register this file,umd_registration
+registration,umd_registration
+register,umd_registration
+can I get the registration link,umd_registration
+need to register a UMD,umd_registration
+please give me the registration link,umd_registration
+I need the UMD form,umd_registration
+How can you assist me with data governance?,chatbot_help
+I updated the file,umd_ownership
+"If I update the file, am I the UMD owner?",umd_ownership
+What are the steps to register UMD files?,umd_registration
+Who can help me with UMD registration?,umd_registration
+Can you help me check if my file is a UMD?,umd_check_start
+My data was manually consolidated. Is it a UMD?,umd_check_created
+"I created this file manually, does that count?",umd_check_created
+"It’s a manual consolidation, is it UMD?",umd_check_created
+It was consolidated after extraction; does that qualify?,umd_check_transformed
+no modifications,umd_check_not_transformed
+No transformations,umd_check_not_transformed
+No changes,umd_check_not_transformed
+"If I didn't enrich my file, is it still a UMD?",umd_check_not_transformed
+I didn't change the data,umd_check_not_transformed
+No modifications were made. Do I still need to register?,umd_check_not_transformed
+UMD means?,umd_guidelines
+Define UMD,umd_guidelines
+Can you define a UMD?,umd_guidelines
+Tell me how UMDs are identified.,umd_guidelines
+What does UMD stand for?,umd_guidelines
+What makes something a UMD?,umd_guidelines
+Which data files are considered UMDs?,umd_guidelines
+Is this file a UMD?,umd_check_start
+Is my file a UMD?,umd_check_start
+Is this document a UMD?,umd_check_start
+Is this sheet a UMD?,umd_check_start
+Is this data a UMD?,umd_check_start
+Would this file be considered a UMD?,umd_check_start
+Can you confirm if this dataset is a UMD?,umd_check_start
+Does this spreadsheet qualify as a UMD?,umd_check_start
+Is my dataset classified as UMD?,umd_check_start
+Would this qualify as user-managed data?,umd_check_start
+Could this be considered user-managed data?,umd_check_start
+hi bot,greeting
+hi databot,greeting
+hii,greeting
+heyy,greeting
+kamusta,greeting
+kamusta bot,greeting
+greetings,greeting
+hi po,greeting
+kamusta databot,greeting
