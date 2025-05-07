@@ -59,40 +59,70 @@ In large organizations, files created outside formal IT-managed systems (like Ex
 
 ---
 
-## How to Run Locally
+## 💻 How to Run Locally
 
 ### 1. Clone the repository
 
 ```bash
 git clone https://github.com/pattdsy/umd-chatbot.git
 cd umd-chatbot
+```
 
-### 2. Set up virtual environment
+### 2. Set up a virtual environment
 
+**Mac/Linux:**
+
+```bash
 python3 -m venv chatbot_env
-source chatbot_env/bin/activate  # Mac/Linux
-# OR for Windows:
-# chatbot_env\Scripts\activate
+source chatbot_env/bin/activate
+```
+
+**Windows:**
+
+```bash
+python -m venv chatbot_env
+chatbot_env\Scripts\activate
+```
 
 ### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
+### 4. Download and extract model folders
 
-### 4. Download and extract model folders from https://drive.google.com/drive/u/0/folders/1HgtySCBgFahqvRQnoTZqPyqZQKT-VeEO
+Download from Google Drive:  
+📥 https://drive.google.com/drive/u/0/folders/1HgtySCBgFahqvRQnoTZqPyqZQKT-VeEO
 
-### 5. Extract both into project root
+Files needed:
+- `intent_model.zip`
+- `tokenizer.zip`
+
+### 5. Extract both into the project root so it looks like this:
+
+```
 umd-chatbot/
 ├── app.py
 ├── umd_bot.py
+├── intents.csv
+├── responses.json
 ├── intent_model/
 ├── tokenizer/
+├── requirements.txt
+```
 
 ### 6. Run the chatbot
+
+```bash
 python app.py
+```
 
 Then open your browser and go to:
+
+```
 http://127.0.0.1:5000
+```
 
 Sample Intents Covered
 
