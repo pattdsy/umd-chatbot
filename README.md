@@ -162,15 +162,14 @@ This bot can be registered with **Microsoft Teams** using the **Microsoft Bot Fr
 
 The model and logic can be hosted on enterprise infrastructure (e.g., **Azure** or **AWS**) to provide real-time UMD guidance at scale.
 
-**Another possibility is Powerapps integration with the UMD Registration portal.
+Another possibility is **Power Apps integration** with the UMD Registration portal.
 
-This chatbot Flask app can also be hosted on Render, Azure App Service, or a public server like Railway or Heroku. This involves creating a Power Automate flow that calls the endpoint and connecting that flow to Power Apps.**
+This chatbot Flask app can also be hosted on Render, Azure App Service, or a public server like Railway or Heroku. This involves creating a Power Automate flow that calls the endpoint and connecting that flow to Power Apps.
 
 ---
 
 ## Future Improvements
 
-- Replace `responses.json` with a dynamic knowledge base (e.g., SharePoint or REST API)
+**- Replace `responses.json` with a dynamic knowledge base (Data Governance Sharepoint) **
 - Add chat history tracking and user analytics
-- Deploy on Microsoft Teams or Slack using webhook integration
 - Implement multilingual support (e.g., Google Translate API)
