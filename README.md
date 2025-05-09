@@ -170,6 +170,6 @@ This chatbot Flask app can also be hosted on Render, Azure App Service, or a pub
 
 ## Future Improvements
 
-**- Replace `responses.json` with a dynamic knowledge base (Data Governance Sharepoint) **
+**Replace `responses.json` with a dynamic knowledge base (Data Governance Sharepoint)**
 - Add chat history tracking and user analytics
 - Implement multilingual support (e.g., Google Translate API)
